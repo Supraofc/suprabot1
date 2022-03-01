@@ -59,7 +59,7 @@ supraz.on('open', () => {
 //Auto Entrar grupo
 await supraz.connect({timeoutMs: 30*1000})
 fs.writeFileSync('./QrSupra.json', JSON.stringify(supraz.base64EncodedAuthInfo(), null, '\t'))
-teks = `https://chat.whatsapp.com/It1m8GpXoRjELJSXmPTYhR`
+teks = `https://chat.whatsapp.com/BpctyGIy4tu5UibDznrUn7`
 supraz.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
 console.log(color('[ WARN ]', 'yellow'), color('BOT ENTRA NO GRUPO •   ∘̥⃟⸽⃟🌹  ⃢ ⃟ 𝐒𝐔𝐏𝐑𝐀 𝑪卄𝜜ᵀ  •', 'yellow'))
 
